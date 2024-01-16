@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{869EFFBC-7993-4D36-93E6-246030B363E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>host_manager</RootNamespace>
+    <AssemblyName>host_manager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acceuil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceuil.Designer.cs">
+      <DependentUpon>acceuil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="availablerooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="availablerooms.Designer.cs">
+      <DependentUpon>availablerooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custumrinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custumrinfo.Designer.cs">
+      <DependentUpon>custumrinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservationmanagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservationmanagement.Designer.cs">
+      <DependentUpon>reservationmanagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservearoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservearoom.Designer.cs">
+      <DependentUpon>reservearoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roomreservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomreservation.Designer.cs">
+      <DependentUpon>roomreservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reception.Designer.cs">
+      <DependentUpon>reception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roomstatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomstatus.Designer.cs">
+      <DependentUpon>roomstatus.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="acceuil.resx">
+      <DependentUpon>acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="availablerooms.resx">
+      <DependentUpon>availablerooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custumrinfo.resx">
+      <DependentUpon>custumrinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reception.resx">
+      <DependentUpon>reception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="reservationmanagement.resx">
+      <DependentUpon>reservationmanagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservearoom.resx">
+      <DependentUpon>reservearoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomreservation.resx">
+      <DependentUpon>roomreservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomstatus.resx">
+      <DependentUpon>roomstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
