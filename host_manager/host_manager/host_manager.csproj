@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,6 +64,81 @@
     </Compile>
     <Compile Include="custumrinfo.Designer.cs">
       <DependentUpon>custumrinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hostDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hostDataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="reservationmanagement.cs">
       <SubType>Form</SubType>
@@ -138,6 +214,171 @@
     <EmbeddedResource Include="roomstatus.resx">
       <DependentUpon>roomstatus.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="hostDataSet.xsc">
+      <DependentUpon>hostDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet.xss">
+      <DependentUpon>hostDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet1.xsc">
+      <DependentUpon>hostDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet1.xss">
+      <DependentUpon>hostDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet10.xsc">
+      <DependentUpon>hostDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet10.xss">
+      <DependentUpon>hostDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet11.xsc">
+      <DependentUpon>hostDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet11.xss">
+      <DependentUpon>hostDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet12.xsc">
+      <DependentUpon>hostDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet12.xss">
+      <DependentUpon>hostDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet13.xsc">
+      <DependentUpon>hostDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet13.xss">
+      <DependentUpon>hostDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet14.xsc">
+      <DependentUpon>hostDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet14.xss">
+      <DependentUpon>hostDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet2.xsc">
+      <DependentUpon>hostDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet2.xss">
+      <DependentUpon>hostDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet3.xsc">
+      <DependentUpon>hostDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet3.xss">
+      <DependentUpon>hostDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet4.xsc">
+      <DependentUpon>hostDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet4.xss">
+      <DependentUpon>hostDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet5.xsc">
+      <DependentUpon>hostDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet5.xss">
+      <DependentUpon>hostDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet6.xsc">
+      <DependentUpon>hostDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet6.xss">
+      <DependentUpon>hostDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet7.xsc">
+      <DependentUpon>hostDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet7.xss">
+      <DependentUpon>hostDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet8.xsc">
+      <DependentUpon>hostDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet8.xss">
+      <DependentUpon>hostDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet9.xsc">
+      <DependentUpon>hostDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="hostDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hostDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hostDataSet9.xss">
+      <DependentUpon>hostDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

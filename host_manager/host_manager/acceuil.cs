@@ -100,13 +100,13 @@ namespace host_manager
 
         private void registerbtn_Click(object sender, EventArgs e)
         {
-            // Create an instance of the RegisterForm
+            
             roomreservation roomreservationForm = new roomreservation();
 
-            // Show the RegisterForm
+            
             roomreservationForm.Show();
 
-            // Optionally, hide the ReceptionForm if needed
+            
             this.Hide();
         }
 
@@ -118,6 +118,23 @@ namespace host_manager
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("deconnecter");
+            
+            reception receptionForm = new reception();
+
+            
+            receptionForm.Show();
+
+            
+            this.Hide();
+
+
+
+            
         }
     }
 }

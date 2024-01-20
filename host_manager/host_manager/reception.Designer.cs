@@ -74,6 +74,7 @@ namespace host_manager
             this.passwordbox.Size = new System.Drawing.Size(297, 27);
             this.passwordbox.TabIndex = 1;
             this.passwordbox.UseSystemPasswordChar = true;
+            this.passwordbox.TextChanged += new System.EventHandler(this.passwordbox_TextChanged);
             // 
             // pictureBox4
             // 
@@ -103,6 +104,7 @@ namespace host_manager
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(297, 27);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox5
             // 

@@ -30,12 +30,12 @@ namespace host_manager
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.customer_btn = new System.Windows.Forms.Button();
             this.room_btn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +50,20 @@ namespace host_manager
             this.panel1.Size = new System.Drawing.Size(712, 100);
             this.panel1.TabIndex = 34;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(559, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 29);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "Retour";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -57,9 +71,8 @@ namespace host_manager
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(21, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 27);
+            this.label1.Size = new System.Drawing.Size(0, 27);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Room Reservation";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
@@ -116,32 +129,19 @@ namespace host_manager
             this.label4.Text = "Room management";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(581, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 29);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "<-";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // roomreservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(712, 403);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.customer_btn);
             this.Controls.Add(this.room_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
+            this.Location = new System.Drawing.Point(15, 15);
             this.Name = "roomreservation";
-            this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -149,14 +149,15 @@ namespace host_manager
 
         }
 
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button customer_btn;
         private System.Windows.Forms.Button room_btn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
     }
 }

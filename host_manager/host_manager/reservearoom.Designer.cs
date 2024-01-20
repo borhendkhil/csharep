@@ -34,19 +34,21 @@ namespace host_manager
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.date = new System.Windows.Forms.DateTimePicker();
-            this.heure = new System.Windows.Forms.DateTimePicker();
-            this.prenom = new System.Windows.Forms.TextBox();
+            this.prenombtn = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.age = new System.Windows.Forms.TextBox();
-            this.cin = new System.Windows.Forms.TextBox();
-            this.tel = new System.Windows.Forms.TextBox();
+            this.agebtn = new System.Windows.Forms.TextBox();
+            this.nombtn = new System.Windows.Forms.TextBox();
+            this.roombtn = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.ciin = new System.Windows.Forms.TextBox();
+            this.cinbtn = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.datefin = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label15
@@ -100,35 +102,21 @@ namespace host_manager
             this.date.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.date.Location = new System.Drawing.Point(161, 26);
+            this.date.Location = new System.Drawing.Point(210, 27);
             this.date.Name = "date";
             this.date.ShowUpDown = true;
             this.date.Size = new System.Drawing.Size(125, 27);
             this.date.TabIndex = 36;
             this.date.Value = new System.DateTime(2022, 5, 19, 9, 48, 0, 0);
             // 
-            // heure
+            // prenombtn
             // 
-            this.heure.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heure.Checked = false;
-            this.heure.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heure.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.heure.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.heure.Location = new System.Drawing.Point(478, 26);
-            this.heure.Name = "heure";
-            this.heure.ShowUpDown = true;
-            this.heure.Size = new System.Drawing.Size(125, 27);
-            this.heure.TabIndex = 35;
-            this.heure.Value = new System.DateTime(2022, 5, 19, 9, 48, 0, 0);
-            // 
-            // prenom
-            // 
-            this.prenom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenom.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.prenom.Location = new System.Drawing.Point(460, 180);
-            this.prenom.Name = "prenom";
-            this.prenom.Size = new System.Drawing.Size(266, 27);
-            this.prenom.TabIndex = 33;
+            this.prenombtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prenombtn.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.prenombtn.Location = new System.Drawing.Point(460, 180);
+            this.prenombtn.Name = "prenombtn";
+            this.prenombtn.Size = new System.Drawing.Size(266, 27);
+            this.prenombtn.TabIndex = 33;
             // 
             // label11
             // 
@@ -152,35 +140,35 @@ namespace host_manager
             this.label10.TabIndex = 31;
             this.label10.Text = "Nom";
             // 
-            // age
+            // agebtn
             // 
-            this.age.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.age.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.age.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.age.Location = new System.Drawing.Point(460, 397);
-            this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(269, 27);
-            this.age.TabIndex = 30;
+            this.agebtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.agebtn.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agebtn.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.agebtn.Location = new System.Drawing.Point(460, 397);
+            this.agebtn.Name = "agebtn";
+            this.agebtn.Size = new System.Drawing.Size(269, 27);
+            this.agebtn.TabIndex = 30;
             // 
-            // cin
+            // nombtn
             // 
-            this.cin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cin.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cin.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.cin.Location = new System.Drawing.Point(460, 105);
-            this.cin.Name = "cin";
-            this.cin.Size = new System.Drawing.Size(269, 27);
-            this.cin.TabIndex = 29;
+            this.nombtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nombtn.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombtn.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.nombtn.Location = new System.Drawing.Point(460, 105);
+            this.nombtn.Name = "nombtn";
+            this.nombtn.Size = new System.Drawing.Size(269, 27);
+            this.nombtn.TabIndex = 29;
             // 
-            // tel
+            // roombtn
             // 
-            this.tel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tel.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tel.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.tel.Location = new System.Drawing.Point(460, 249);
-            this.tel.Name = "tel";
-            this.tel.Size = new System.Drawing.Size(269, 27);
-            this.tel.TabIndex = 28;
+            this.roombtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.roombtn.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roombtn.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.roombtn.Location = new System.Drawing.Point(460, 249);
+            this.roombtn.Name = "roombtn";
+            this.roombtn.Size = new System.Drawing.Size(269, 27);
+            this.roombtn.TabIndex = 28;
             // 
             // label2
             // 
@@ -188,11 +176,11 @@ namespace host_manager
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(366, 29);
+            this.label2.Location = new System.Drawing.Point(456, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 24);
+            this.label2.Size = new System.Drawing.Size(103, 24);
             this.label2.TabIndex = 26;
-            this.label2.Text = "heure";
+            this.label2.Text = "Date fin";
             // 
             // label6
             // 
@@ -226,9 +214,9 @@ namespace host_manager
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(78, 249);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(212, 24);
+            this.label4.Size = new System.Drawing.Size(202, 24);
             this.label4.TabIndex = 27;
-            this.label4.Text = "Numero telephone";
+            this.label4.Text = "Numero chambre";
             // 
             // label3
             // 
@@ -238,51 +226,99 @@ namespace host_manager
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(71, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 24);
+            this.label3.Size = new System.Drawing.Size(133, 24);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Date";
+            this.label3.Text = "Date debut";
             // 
-            // ciin
+            // cinbtn
             // 
-            this.ciin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ciin.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ciin.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.ciin.Location = new System.Drawing.Point(460, 326);
-            this.ciin.Name = "ciin";
-            this.ciin.Size = new System.Drawing.Size(269, 27);
-            this.ciin.TabIndex = 41;
+            this.cinbtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cinbtn.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cinbtn.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.cinbtn.Location = new System.Drawing.Point(460, 326);
+            this.cinbtn.Name = "cinbtn";
+            this.cinbtn.Size = new System.Drawing.Size(269, 27);
+            this.cinbtn.TabIndex = 41;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(484, 447);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 29);
+            this.button1.TabIndex = 42;
+            this.button1.Text = "Retour";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(645, 447);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 29);
+            this.button2.TabIndex = 43;
+            this.button2.Text = "Enregistre\r\n";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // datefin
+            // 
+            this.datefin.CalendarFont = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datefin.Checked = false;
+            this.datefin.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datefin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datefin.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.datefin.Location = new System.Drawing.Point(580, 27);
+            this.datefin.Name = "datefin";
+            this.datefin.ShowUpDown = true;
+            this.datefin.Size = new System.Drawing.Size(125, 27);
+            this.datefin.TabIndex = 44;
+            this.datefin.Value = new System.DateTime(2022, 5, 19, 9, 48, 0, 0);
             // 
             // reservearoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ciin);
+            this.ClientSize = new System.Drawing.Size(928, 499);
+            this.Controls.Add(this.datefin);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cinbtn);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.date);
-            this.Controls.Add(this.heure);
-            this.Controls.Add(this.prenom);
+            this.Controls.Add(this.prenombtn);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.age);
-            this.Controls.Add(this.cin);
-            this.Controls.Add(this.tel);
+            this.Controls.Add(this.agebtn);
+            this.Controls.Add(this.nombtn);
+            this.Controls.Add(this.roombtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Location = new System.Drawing.Point(15, 15);
             this.Name = "reservearoom";
-            this.Text = "reservearoom";
             this.Load += new System.EventHandler(this.reservearoom_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+        private System.Windows.Forms.Button button2;
+
+        private System.Windows.Forms.Button button1;
 
         #endregion
 
@@ -291,18 +327,18 @@ namespace host_manager
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.DateTimePicker date;
-        public System.Windows.Forms.DateTimePicker heure;
-        public System.Windows.Forms.TextBox prenom;
+        public System.Windows.Forms.TextBox prenombtn;
         private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.TextBox age;
-        public System.Windows.Forms.TextBox cin;
-        public System.Windows.Forms.TextBox tel;
+        public System.Windows.Forms.TextBox agebtn;
+        public System.Windows.Forms.TextBox nombtn;
+        public System.Windows.Forms.TextBox roombtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox ciin;
+        public System.Windows.Forms.TextBox cinbtn;
+        public System.Windows.Forms.DateTimePicker datefin;
     }
 }

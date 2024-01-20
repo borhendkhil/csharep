@@ -47,6 +47,7 @@ namespace host_manager
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.retour = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +118,7 @@ namespace host_manager
             this.registerbtn.TabIndex = 36;
             this.registerbtn.Text = "Register";
             this.registerbtn.UseVisualStyleBackColor = false;
+            this.registerbtn.Click += new System.EventHandler(this.registerbtn_Click);
             // 
             // mdp_btn
             // 
@@ -223,21 +225,36 @@ namespace host_manager
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(127, 39);
+            this.label1.Location = new System.Drawing.Point(64, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 27);
+            this.label1.Size = new System.Drawing.Size(284, 27);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Ajouter un utilisateur au SAMU05";
+            this.label1.Text = "Ajouter un utilisateur";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.retour);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(618, 100);
             this.panel1.TabIndex = 24;
+            // 
+            // retour
+            // 
+            this.retour.BackColor = System.Drawing.Color.White;
+            this.retour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.retour.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.retour.ForeColor = System.Drawing.Color.SteelBlue;
+            this.retour.Location = new System.Drawing.Point(460, 36);
+            this.retour.Name = "retour";
+            this.retour.Size = new System.Drawing.Size(119, 29);
+            this.retour.TabIndex = 43;
+            this.retour.Text = "Retour";
+            this.retour.UseVisualStyleBackColor = false;
+            this.retour.Click += new System.EventHandler(this.retour_Click);
             // 
             // register
             // 
@@ -289,5 +306,6 @@ namespace host_manager
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button retour;
     }
 }
